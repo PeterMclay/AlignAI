@@ -1,8 +1,8 @@
-# align_ai
+# Hack Western 7 - AlignAI
 
-A new Flutter project.
+AlignAI is a mobile fitness application that utilizes TensorFLows pose estimation model to determine if a user is doing a specified excersice correctly based on their body alignment
 
-## Getting Started
-Align AI is a Android and IOS fitness application that utilizes Pose Estimation, a machine learning model that generates the pose of a person by estimating spatial locations and key body parts.
+The Flutter app was built in 48 hours for Hack Western, check out the full submission demo here
 
-The user will select an exercise they want to do, and the App will run Pose Estimation on them while they do the workout to see if their body is aligned and ensure that they are doing the exercise correctly.
+![](images/arm-press.gif)
+![](images/warrior-pose.gif)
