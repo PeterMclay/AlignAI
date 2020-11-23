@@ -4,4 +4,5 @@ AlignAI is a mobile fitness application that utilizes TensorFLows pose estimatio
 
 The Flutter app was built in 48 hours for Hack Western, check out the full submission demo here
 
-![](images/arm-press.gif)![](images/warrior-pose.gif)
+![](images/arm-press.gif)
+![](images/warrior-pose.gif)
