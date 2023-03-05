@@ -82,16 +82,20 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/crunch.PNG')),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                            primary: Colors.white,
+                          ),
                           onPressed: () {
                             print('hello');
                           },
+                          child: Container(
+                            padding: EdgeInsets.all(10.0),
+                            child: Image.asset('images/crunch.PNG'),
+                          ),
                         ),
                       ),
                     ],
@@ -102,17 +106,68 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                            primary: Colors.white,
+                          ),
+                          onPressed: () {
+                            onSelectY(context: context, modelName: 'posenet');
+                          },
                           child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/arm_press.PNG')),
-                          onPressed: () =>
-                              onSelectA(context: context, modelName: 'posenet'),
+                            padding: EdgeInsets.all(10.0),
+                            child: Image.asset('images/arm_press.PNG'),
+                          ),
                         ),
                       ),
+                    ],
+                  ),
+                  Stack(
+                    children: <Widget>[
+                      Container(
+                          width: 140,
+                          height: 140,
+                          padding: EdgeInsets.symmetric(horizontal: 10.0),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                              ),
+                              primary: Colors.white,
+                            ),
+                            onPressed: () {
+                              print('hello');
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(10.0),
+                              child: Image.asset('images/push_up.PNG'),
+                            ),
+                          )),
+                    ],
+                  ),
+                  Stack(
+                    children: <Widget>[
+                      Container(
+                          width: 140,
+                          height: 140,
+                          padding: EdgeInsets.symmetric(horizontal: 10.0),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                              ),
+                              primary: Colors.white,
+                            ),
+                            onPressed: () {
+                              onSelectY(context: context, modelName: 'posenet');
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(10.0),
+                              child: Image.asset('images/squat.PNG'),
+                            ),
+                          )),
                     ],
                   ),
                   Stack(
@@ -121,16 +176,20 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/push_up.PNG')),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                            primary: Colors.white,
+                          ),
                           onPressed: () {
                             print('hello');
                           },
+                          child: Container(
+                            padding: EdgeInsets.all(10.0),
+                            child: Image.asset('images/plank.PNG'),
+                          ),
                         ),
                       ),
                     ],
@@ -141,55 +200,20 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/squat.PNG')),
-                          onPressed: () =>
-                              onSelectS(context: context, modelName: 'posenet'),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: <Widget>[
-                      Container(
-                        width: 140,
-                        height: 140,
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/plank.PNG')),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                            primary: Colors.white,
+                          ),
                           onPressed: () {
                             print('hello');
                           },
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: <Widget>[
-                      Container(
-                        width: 140,
-                        height: 140,
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
                           child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/lunge_squat.PNG')),
-                          onPressed: () {
-                            print('hello');
-                          },
+                            padding: EdgeInsets.all(10.0),
+                            child: Image.asset('images/lunge_squat.PNG'),
+                          ),
                         ),
                       ),
                     ],
@@ -223,18 +247,91 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/yoga1.PNG')),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                            primary: Colors.white,
+                          ),
                           onPressed: () {
                             print('hello');
                           },
+                          child: Container(
+                            padding: EdgeInsets.all(10.0),
+                            child: Image.asset('images/yoga1.PNG'),
+                          ),
                         ),
                       ),
+                    ],
+                  ),
+                  Stack(
+                    children: <Widget>[
+                      Container(
+                          width: 140,
+                          height: 140,
+                          padding: EdgeInsets.symmetric(horizontal: 10.0),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                              ),
+                              primary: Colors.white,
+                            ),
+                            onPressed: () {
+                              onSelectY(context: context, modelName: 'posenet');
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(10.0),
+                              child: Image.asset('images/yoga4.PNG'),
+                            ),
+                          )),
+                    ],
+                  ),
+                  Stack(
+                    children: <Widget>[
+                      Container(
+                          width: 140,
+                          height: 140,
+                          padding: EdgeInsets.symmetric(horizontal: 10.0),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                              ),
+                              primary: Colors.white,
+                            ),
+                            onPressed: () {
+                              print('hello');
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(10.0),
+                              child: Image.asset('images/yoga2.PNG'),
+                            ),
+                          )),
+                    ],
+                  ),
+                  Stack(
+                    children: <Widget>[
+                      Container(
+                          width: 140,
+                          height: 140,
+                          padding: EdgeInsets.symmetric(horizontal: 10.0),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                              ),
+                              primary: Colors.white,
+                            ),
+                            onPressed: () {
+                              print('hello');
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(10.0),
+                              child: Image.asset('images/yoga3.PNG'),
+                            ),
+                          )),
                     ],
                   ),
                   Stack(
@@ -243,75 +340,20 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/yoga4.PNG')),
-                          onPressed: () =>
-                              onSelectY(context: context, modelName: 'posenet'),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: <Widget>[
-                      Container(
-                        width: 140,
-                        height: 140,
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/yoga2.PNG')),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                            primary: Colors.white,
+                          ),
                           onPressed: () {
                             print('hello');
                           },
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: <Widget>[
-                      Container(
-                        width: 140,
-                        height: 140,
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
                           child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/yoga3.PNG')),
-                          onPressed: () {
-                            print('hello');
-                          },
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: <Widget>[
-                      Container(
-                        width: 140,
-                        height: 140,
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/yoga5.PNG')),
-                          onPressed: () {
-                            print('hello');
-                          },
+                            padding: EdgeInsets.all(10.0),
+                            child: Image.asset('images/yoga5.PNG'),
+                          ),
                         ),
                       ),
                     ],
